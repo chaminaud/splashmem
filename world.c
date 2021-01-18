@@ -6,6 +6,9 @@
 #include "player.h"
 #include "actions.h"
 
+
+
+
 /* !!!!!!!!!!!!!!!! MAP !!!!!!!!!!!!!!!!!!!!! */
 uint8_t mapmem[MAP_SIZE * MAP_SIZE] = {0};
 
