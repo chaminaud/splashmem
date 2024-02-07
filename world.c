@@ -35,7 +35,7 @@ void world_create_players()
 /* ------------------------------------------------------------------------- */
 void world_do_player_action(t_player *p_player)
 {
-
+    // ici du code a qui fonctionne
 }
 
 /* ------------------------------------------------------------------------- */
@@ -54,5 +54,5 @@ void world_paint_spot(uint32_t x, uint32_t y, uint32_t num)
 /* ------------------------------------------------------------------------- */
 void world_get_winner()
 {
-
+    // ici du code a qui fonctionne
 }
