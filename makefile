@@ -36,5 +36,3 @@ clean:
 	rm -f *.so
 	rm -f $(OBJS)
 	rm -f $(EXE)
-
-
