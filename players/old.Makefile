@@ -1,6 +1,6 @@
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
-CFLAGS= -Wall -I.. -fPIC
+CFLAGS= -Wall -I../src -fPIC
 LDFLAGS=
 NAME=example
 
@@ -11,5 +11,5 @@ all: $(OBJS)
 	gcc -shared -o p4.so player4.o
 
 clean:
-	rm $(OBJS)
-	rm *.so
+	rm -f $(OBJS)
+	rm -f *.so

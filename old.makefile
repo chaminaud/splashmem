@@ -1,37 +1,25 @@
 # makefile
-SRCS=$(wildcard *.c)
+SRCS=$(wildcard src/*.c)
 OBJS=$(SRCS:.c=.o)
 CFLAGS= -Wall -g2 -fPIC  # -DDEBUG
 LDFLAGS= -ldl -lSDL2
-EXE=splash
+EXE=splashmem
 
 all: players $(OBJS)
 	@echo $(SRCS) 
 	gcc  $(OBJS) $(LDFLAGS) -o $(EXE)
 
 players:
-	cd pl && $(MAKE)
+	cd players && $(MAKE) -f old.Makefile
 
 clean_pl:
-	cd pl && $(MAKE) clean
+	cd players && $(MAKE) -f old.Makefile clean
 
-clean_all: clean 
-	cd pl && $(MAKE) clean
-
-tp5: $(OBJS)
-	gcc  $(OBJS) -ldl -lSDL2 -lsplash -o $(EXE)
-
-liba: $(OBJS)
-	ar crs libsplash.a actions.o player.o world.o render.o bomb.o
-
-affiche:
-	@echo TOTO
-
-libso: affiche all 
-	gcc -shared -o libsplash.so actions.o main.o player.o world.o
+clean_all: clean_pl clean 
+	@echo "Done"
 
 clean: 
-	$(DEL) -f core
+	rm -f core
 	rm -f *.a
 	rm -f *.so
 	rm -f $(OBJS)
