@@ -1,20 +1,20 @@
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_opengl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_opengl.h>
 
-#include "param.h"
-#include "world.h"
 #include "actions.h"
+#include "param.h"
 #include "splash.h"
+#include "world.h"
 
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* ------------------------------------------------------------------------- */
 void render_map()
 {
-    int i = 0;
+    int      i = 0;
     SDL_Rect rect;
 
     rect.x = 0;
@@ -38,7 +38,7 @@ void render_map()
 /* ------------------------------------------------------------------------- */
 void render_player()
 {
-    int i = 0;
+    int i         = 0;
     screenSurface = SDL_GetWindowSurface(window);
     SDL_Rect rect;
 

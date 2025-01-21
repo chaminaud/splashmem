@@ -1,5 +1,0 @@
-
-actions_init()
-{
-
-}
