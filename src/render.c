@@ -74,6 +74,15 @@ void main_loop()
                 quitting = 1;
             }
         }
+
+        players[0]->x += 1;
+        if (players[0]->x >= MAP_SIZE)
+        {
+            players[0]->x = 0;
+        }
+        world_paint_spot(players[0]->x, players[0]->y, 1); // 1 for player1 <-> idx 0
+        printf("x = %d\n", players[0]->x);
+
         render_map();
 
         SDL_Delay(100);
