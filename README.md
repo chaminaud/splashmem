@@ -55,10 +55,10 @@ Each player have 9000 credits.
 |ACTION_DASH_R | 10 | Move player of 8 block in one direction |
 |ACTION_DASH_U | 10 | Move player of 8 block in one direction |
 |ACTION_DASH_D | 10 | Move player of 8 block in one direction |
-|ACTION_TELEPORT_L | 4 | Teleport player 8 blocks away |
-|ACTION_TELEPORT_R | 4 | Teleport player 8 blocks away|
-|ACTION_TELEPORT_U | 4 | Teleport player 8 blocks away|
-|ACTION_TELEPORT_D | 4 | Teleport player 8 blocks away|
+|ACTION_TELEPORT_L | 2 | Teleport player 8 blocks away |
+|ACTION_TELEPORT_R | 2 | Teleport player 8 blocks away|
+|ACTION_TELEPORT_U | 2 | Teleport player 8 blocks away|
+|ACTION_TELEPORT_D | 2 | Teleport player 8 blocks away|
 |ACTION_SPLASH |8 | Marque toute les cases autour du joueur |
 |ACTION_BOMB |9 | Place une bombe qui marque 9 cases et qui ce déclenche après 5 tours |
 |ACTION_STILL |1 | Pas d'action |
